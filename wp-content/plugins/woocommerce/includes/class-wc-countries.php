@@ -635,21 +635,21 @@ class WC_Countries {
 				'autocomplete' => 'family-name',
 				'priority'     => 20,
 			),
-			'company'    => array(
+			/*'company'    => array(
 				'label'        => __( 'Company name', 'woocommerce' ),
 				'class'        => array( 'form-row-wide' ),
 				'autocomplete' => 'organization',
 				'priority'     => 30,
 				'required'     => 'required' === get_option( 'woocommerce_checkout_company_field', 'optional' ),
-			),
-			'country'    => array(
+			),*/
+			/*'country'    => array(
 				'type'         => 'country',
 				'label'        => __( 'Country', 'woocommerce' ),
 				'required'     => true,
 				'class'        => array( 'form-row-wide', 'address-field', 'update_totals_on_change' ),
 				'autocomplete' => 'country',
 				'priority'     => 40,
-			),
+			),*/
 			'address_1'  => array(
 				'label'        => __( 'Street address', 'woocommerce' ),
 				/* translators: use local order of street name and house number. */
@@ -668,12 +668,12 @@ class WC_Countries {
 			),
 			'city'       => array(
 				'label'        => __( 'Town / City', 'woocommerce' ),
-				'required'     => true,
+				'required'     => false,
 				'class'        => array( 'form-row-wide', 'address-field' ),
 				'autocomplete' => 'address-level2',
 				'priority'     => 70,
 			),
-			'state'      => array(
+/*			'state'      => array(
 				'type'         => 'state',
 				'label'        => __( 'State / County', 'woocommerce' ),
 				'required'     => true,
@@ -681,16 +681,16 @@ class WC_Countries {
 				'validate'     => array( 'state' ),
 				'autocomplete' => 'address-level1',
 				'priority'     => 80,
-			),
-			'postcode'   => array(
+			),*/
+			/*'postcode'   => array(
 				'label'        => __( 'Postcode / ZIP', 'woocommerce' ),
 				'required'     => true,
 				'class'        => array( 'form-row-wide', 'address-field' ),
 				'validate'     => array( 'postcode' ),
 				'autocomplete' => 'postal-code',
 				'priority'     => 90,
-			),
-		);
+			),*/
+		);		
 
 		if ( 'hidden' === get_option( 'woocommerce_checkout_company_field', 'optional' ) ) {
 			unset( $fields['company'] );
