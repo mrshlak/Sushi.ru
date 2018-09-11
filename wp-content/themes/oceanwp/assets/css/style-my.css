@@ -1,0 +1,42 @@
+.tele{
+	display: flex;
+	float: left;
+	background-color: #13aff0;
+	color: #fff;
+	padding: 0 5px; 
+}
+.myLogin{
+	display: flex;
+	float: right;
+}
+.lgn{
+	margin-left: 10px;
+}
+#main .widget_product_categories li a, .widget_layered_nav li a{
+	font-size: 16px;
+	color: #fff;
+	background-color: #13aff0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#main .widget_product_categories li, .widget_layered_nav li{
+	margin-bottom: 1px;
+	
+}
+#main #primary{
+	padding-left: 0;
+	border-left-width: 0;
+}
+
+
+
+
+.tele:hover,
+#main .widget_product_categories li a:hover, .widget_layered_nav li a:hover{
+	color: #fff;
+	background-color: #0b7cac;
+}
+.product-category mark,
+.widget_product_categories li a:before, .widget_layered_nav li a:before{
+	display: none;
+}

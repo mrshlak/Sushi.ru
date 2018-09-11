@@ -393,6 +393,10 @@ final class OCEANWP_Theme_Class {
 		wp_deregister_style( 'font-awesome' );
 		wp_deregister_style( 'fontawesome' );
 
+
+		wp_enqueue_style( 'style-my', $dir .'style-my.css');
+		
+
 		// Load font awesome style
 		wp_enqueue_style( 'font-awesome', $dir .'third/font-awesome.min.css', false, '4.7.0' );
 
