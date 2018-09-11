@@ -229,7 +229,7 @@ class WC_Checkout {
 				'placeholder' => esc_attr__( 'Username', 'woocommerce' ),
 			);
 		}
-
+		
 		if ( 'no' === get_option( 'woocommerce_registration_generate_password' ) ) {
 			$this->fields['account']['account_password'] = array(
 				'type'        => 'password',
