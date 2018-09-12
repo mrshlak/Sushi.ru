@@ -207,7 +207,7 @@ class WC_Checkout {
 				$this->get_value( 'shipping_country' ),
 				'shipping_'
 			),
-			/*'account'  => array(),*/
+			'account'  => array(),
 			'order'    => array(
 				'order_comments' => array(
 					'type'        => 'textarea',
@@ -229,19 +229,7 @@ class WC_Checkout {
 				'placeholder' => esc_attr__( 'Username', 'woocommerce' ),
 			);
 		}
-
-		if ( 'no' === get_option( 'woocommerce_registration_generate_email' ) ) {
-			$this->fields['account']['account_email'] = array(
-				'label'        => __( 'Email account', 'woocommerce' ),
-				'required'     => true,
-				'type'         => 'email',
-				'class'        => array( 'form-row-wide' ),
-				'validate'     => array( 'email' ),
-				'autocomplete' => 'no' === get_option( 'woocommerce_registration_generate_username' ) ? 'email' : 'email username',
-				'priority'     => 110,
-			);
-		}
-
+		
 		if ( 'no' === get_option( 'woocommerce_registration_generate_password' ) ) {
 			$this->fields['account']['account_password'] = array(
 				'type'        => 'password',
